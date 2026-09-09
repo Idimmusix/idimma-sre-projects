@@ -10,7 +10,7 @@ const demos: Demo[] = [
   {
     title: "Agent Cost/Context Inspector",
     description:
-      "Paste or upload a trace of an agentic session and see where its tokens actually went: redundant context reloads, cache misses, oversized tool outputs.",
+      "Applies cost-attribution discipline to agentic workflows: runs a session trace against three detection rules (cache-boundary violations, tool-output bloat, redundant reloads), each specified like a production alerting rule.",
     status: "In progress",
     href: "/agent-cost-inspector",
   },
@@ -42,7 +42,7 @@ export default function Home() {
     <main className="mx-auto max-w-3xl px-6 py-16">
       <h1 className="text-3xl font-bold tracking-tight">SRE Projects</h1>
       <p className="mt-3 text-neutral-600 dark:text-neutral-400">
-        Live, runnable demos. Real code, not just descriptions.
+        Working tools, not slideware: each one applies a specific platform-engineering discipline to a real, inspectable implementation.
       </p>
 
       <ul className="mt-10 flex flex-col gap-4">

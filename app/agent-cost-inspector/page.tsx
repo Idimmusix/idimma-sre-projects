@@ -8,10 +8,11 @@ export default function AgentCostInspector() {
         Agent Cost/Context Inspector
       </h1>
       <p className="mt-4 text-neutral-600 dark:text-neutral-400">
-        In progress. Paste or upload a trace of an agentic session and see
-        where its tokens actually went: redundant context reloads, cache
-        misses caused by poor scheduling, and oversized tool outputs, then
-        get concrete suggestions to fix them.
+        In progress. A total token bill tells you a system is expensive,
+        never why. This tool runs a session trace against three detection
+        rules, cache-boundary violations, tool-output bloat, and redundant
+        context reloads, each specified like a production alerting rule: a
+        trigger condition, the underlying defect, and the cost impact.
       </p>
     </main>
   );

@@ -15,7 +15,7 @@ Case studies (the narrative side of this work) live in the [idimma-tech](https:/
 
 ### Agent Cost/Context Inspector
 
-Paste or upload a trace of an agentic session (real or synthetic) and see where its tokens actually went: redundant context reloads, cache misses caused by poor scheduling, oversized tool outputs. Self-contained in this Next.js app, no backend service required, since the analysis is a pure function over the uploaded trace. The most direct proof of the token-optimization/AI-tooling-discipline claim on the main site.
+Agentic and LLM-assisted workflows need the same operational discipline as any other production dependency: cost attribution, not just a total bill. This tool takes a trace of an agent session and runs it against three detection rules (cache-boundary violations, tool-output bloat, redundant context reloads), each specified like a production alerting rule: a trigger condition, the underlying defect, and the cost impact. Self-contained in this Next.js app, no backend service required, since analysis is a pure function over the trace. The operational counterpart to the "Designing for the Cache Window, Not the Clock" case study on the main site.
 
 ### Multi-Backend Observability CLI
 
