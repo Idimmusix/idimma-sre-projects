@@ -8,7 +8,7 @@ Case studies (the narrative side of this work) live in the [idimma-tech](https:/
 
 | Demo | Status | Backend |
 |---|---|---|
-| [Agent Cost/Context Inspector](#agent-costcontext-inspector) | In progress | None (self-contained) |
+| [Agent Cost/Context Inspector](#agent-costcontext-inspector) | Live | None (self-contained) |
 | [Multi-Backend Observability CLI](#multi-backend-observability-cli) | Planned | N/A (standalone CLI, own repo) |
 | [Incident Correlation Sandbox](#incident-correlation-sandbox) | Planned | Separate FastAPI repo |
 | [SLO/Error-Budget Dashboard](#sloerror-budget-dashboard) | Planned | Separate FastAPI repo |
