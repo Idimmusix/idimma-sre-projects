@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.SITE_URL ?? "http://localhost:3000"),
   title: "SRE Projects · Idimma",
   description: "Live, runnable SRE/platform engineering demos.",
 };

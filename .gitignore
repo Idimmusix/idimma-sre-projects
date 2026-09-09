@@ -30,8 +30,10 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# environment variables (local overrides only — .env.production holds
+# real, non-secret site URLs and is intentionally committed)
+.env
+.env.*.local
 
 # vercel
 .vercel
