@@ -22,7 +22,7 @@ export type AnalysisResult = {
 };
 
 // Rough conversion for byte-denominated tool output into token terms.
-const BYTES_PER_TOKEN = 4;
+export const BYTES_PER_TOKEN = 4;
 
 function detectCacheBoundaryViolations(trace: Trace): Violation[] {
   const violations: Violation[] = [];

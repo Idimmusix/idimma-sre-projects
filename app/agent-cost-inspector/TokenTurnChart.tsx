@@ -1,6 +1,7 @@
 "use client";
 
 import type { Trace } from "@/lib/agent-cost-inspector/schema";
+import { BYTES_PER_TOKEN } from "@/lib/agent-cost-inspector/analyze";
 import type { AnalysisResult } from "@/lib/agent-cost-inspector/analyze";
 
 type Segment = {
@@ -13,8 +14,6 @@ const CATEGORY_COLOR: Record<Segment["category"], string> = {
   "Cache miss": "var(--chart-cache-miss)",
   "Tool output": "var(--chart-tool-output)",
 };
-
-const BYTES_PER_TOKEN = 4;
 
 function turnToSegment(turn: Trace["turns"][number]): Segment | null {
   if (turn.type === "context_load") {
