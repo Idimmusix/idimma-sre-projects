@@ -697,7 +697,7 @@ git commit -m "Add detection rules and aggregation for agent cost analysis"
 - Consumes: `AnalysisResult`, `Trace` (to read per-turn token/byte data) from Tasks 3/5.
 - Produces: `<TokenTurnChart trace={trace} result={result} />` component, consumed by Task 7's page.
 
-Palette and mark spec below were produced by running the dataviz skill's validator (`validate_palette.js`) against this exact 3-category use case; both light and dark modes pass every check (worst adjacent CVD Delta E 9.2 light / 9.4 dark, both well above the 8.0 floor). The aqan (tool-output) color falls under 3:1 contrast on the light surface, which is why the legend below uses visible text labels rather than color alone (the skill's "relief rule").
+Palette and mark spec below were produced by running the dataviz skill's validator (`validate_palette.js`) against this exact 3-category use case; both light and dark modes pass every check (worst adjacent CVD Delta E 9.2 light / 9.4 dark, both well above the 8.0 floor). The aqua (tool-output) color falls under 3:1 contrast on the light surface, which is why the legend below uses visible text labels rather than color alone (the skill's "relief rule").
 
 - [ ] **Step 1: Write the component**
 
